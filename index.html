@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <section class="signin">
+      <div class="signin__logo">
+        <div id="logo">
+          <img
+            src="/static/img/quizzen-only-text-logo.svg"
+            alt="quizzen-logo"
+          />
+        </div>
+        <h2 class="signin__header">
+          Mövzu əsaslı suallarla
+          <i class="signin__header--italic">biliyini artır</i>
+        </h2>
+      </div>
+      <div class="signin__form--wrapper">
+        <form action="#" class="signin__form">
+          <div class="form__inputs">
+            <div class="form__input">
+              <input type="text" placeholder="Email" name="email" id="email" />
+            </div>
+            <p class="signin__error">Belə hesab yoxdur.</p>
+            <div class="form__input form__input__password">
+              <input
+                type="password"
+                placeholder="Şifrə"
+                name="password"
+                id="password"
+              />
+            </div>
+            <!-- <p class="signin__error">Bu şifrə yanlışdır.</p> -->
+            <div class="form__input">
+              <button type="submit" id="submit" class="form__submit">
+                Daxil ol
+              </button>
+            </div>
+          </div>
+          <div class="signin_forgot-password">
+            <a href="#forgot">Şifrəni xatırlamırsan?</a>
+          </div>
+          <hr />
+          <div class="signin__register">
+            <a href="#register"><button type="button" >
+            Tələbə hesabı yarat
+            </button></a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

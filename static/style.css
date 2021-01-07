@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --q_orange: #f17300;
+  --q_header_bg: rgba(248, 181, 120, 0.7);
+  --q_black: #38352d;
+  --q_grey: #5c5c5c;
+  --white: #fafafa;
+  --shadow: #55534d47;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: var(--montserrat);
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: min(1000px, 90%);
+  margin: auto;
+}
+.signin__logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(100% - 350px);
+}
+#logo {
+  margin-right: 8rem;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+#logo img {
+  height: 90%;
+  width: auto;
+  margin: auto;
+}
+.signin__header {
+  color: var(--q_grey);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.signin__header--italic {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--q_orange);
+}
+
+.signin__form--wrapper {
+  flex: 1 1 350px;
+  max-width: 100%;
+}
+.signin__form {
+  width: 350px;
+  max-width: 100%;
+  margin: 4rem auto 2rem;
+  padding: 1.8rem 0rem 2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #b1b1b1;
+}
+.form__inputs,
+.signin_forgot-password,
+.signin__register,
+hr {
+  margin: 0rem 1.5rem;
+}
+.form__input {
+  margin-bottom: 1rem;
+}
+.form__input input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 0.1rem solid var(--q_header_bg);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 0rem 0.5rem;
+}
+.form__input input:focus {
+  outline: none;
+  background-color: none;
+  border: 0.1rem solid var(--q_orange);
+}
+.form__input input::placeholder {
+  color: #5c5c5cd0;
+}
+.form__submit {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--q_orange);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.form__submit:hover {
+  cursor: pointer;
+}
+
+.signin_forgot-password {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: var(--q_black);
+  font-size: 1.2rem;
+  text-align: center;
+  transition: all 0.1s;
+}
+.signin_forgot-password:hover {
+  color: var(--q_orange);
+  text-decoration: underline 0.1rem solid;
+}
+hr {
+  margin: 2rem 1.5rem;
+  border: none;
+  border-top: 0.1rem solid #5c5c5c38;
+}
+.signin__register {
+  text-align: center;
+}
+.signin__register button {
+  background: #faa73b54;
+  color: var(--q_black);
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0 1.5rem;
+  transition: all 0.2s;
+}
+.signin__register button:hover {
+  background: #faa73b80;
+  color: var(--q_black);
+  border: 0.1rem solid var(--q_orange);
+}
+
+.signin__error {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(236, 18, 18);
+}
+
+@media (max-width: 784px) {
+  .signin__logo {
+    align-items: center;
+    margin-top: 3rem;
+  }
+  #logo {
+    max-width: 100%;
+    margin-right: 8rem;
+    margin: 0 4rem;
+  }
+  .signin__header {
+    text-align: center;
+  }
+  .signin__form--wrapper {
+    margin-bottom: 3rem;
+  }
+}
